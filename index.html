@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Toto Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <main class="welcome-header">
+      <img class="welcome-header__rabbit-img" src="img/rabbit.jpg" />
+      <h1 class="welcome-header__title">Welcome to Toto Talk</h1>
+      <p class="welcome-header__text">
+        If you have a Toto Account, log in with your email or phone number
+      </p>
+    </main>
+    <form action="friends.html" method="get" id="login-form">
+      <input
+        name="username"
+        type="text"
+        placeholder="Email or Phone number"
+        required
+      />
+      <input name="password" type="password" placeholder="Password" required />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Toto Account or Password</a>
+    </form>
+    <div id="no-mobile">
+      <span>Please log in with your phone ㅠㅠ</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/d005ca1b9a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
